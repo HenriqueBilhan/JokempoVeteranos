@@ -1,0 +1,69 @@
+/*aplicando uma configuração básica a todos os elemento */
+*{
+    box-sizing: border-box; /* inclui bordas e padding no tamanho total do elemento*/
+}
+/*estilizando o corpo da página */
+body{
+font-family: Arial, Helvetica, sans-serif; /*define a fonte padrão*/
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrRVTdUoOG4ZtfxdCQNzS7cOTi_uX-E64UZg&s); /* fundo com gradientes azul na diagonal(135deg) */
+color: rgb(0, 0, 0); /* cor clara para o texto */
+display: flex; /*usa flexbox ára o posicionamento*/
+flex-direction: column;/*organiza os filhos(elementos) em coluna*/
+align-items: center; /*centraliza horizontalmente */
+justify-content:  flex-start; /* alinha os filhos (elementos) no topo da página*/
+min-height: 100vh; /*grante que o body ocupe pelo menos toda a altura da tela*/
+margin:0; /*remove margens padrão do navegador */
+padding: 2rem; /* espaço interno nas bordas do body*/
+}   
+/* estilo do título principal */
+h1{
+margin-bottom: 1rem; /*rem="root em" valor relativo ao tamanho do componentes emem html */
+text-shadow:  0 0 10px rgb(7, 7, 7);/*valores são as direçoes da sombra e cor */
+
+} 
+/* container dos botões da escolha */
+.choices{
+display: flex; /* organiza os botões lado a lado */
+gap: 1rem; /* espaço entre os botões*/
+margin-bottom: 2rem; /* espaço abaixo do container*/
+}
+/* estilo do botões */
+button{
+background: #5f9af8; /*fundo branco semi-transparente */
+border: #5f9af8; /* borda branca sólida 2px é a espessura, solid é formato, e a cor */
+border-radius:  12px; /* cantos arredondados */
+padding: 1rem 2rem; /*espaçamento interno do botão*/
+font-size: 1.2rem; /* tamanho da fonte */
+font-weight:  600; /* peso da fonte(negrito leve) */
+color: #000000; /*cor de texto branco */
+cursor:pointer; /*mostrar a mãozinha ao passar o mouse */
+transition: backgroud-color 0.3s ease, transform 0.2s ease; /*suavisa as mudanças visuais */
+min-width: 100px; /*largura minima */
+box-shadow: 0 0 8px #f9f9f9;
+}
+/* efeito visual ao passar o mouse */
+button:hover{
+    transform: rotate(720deg);
+}
+/*estilo dos parágrafos de escolha */
+p{
+
+    font-size: 1.2rem;
+    margin:  0.5rem 0 ; /* margem acima e abaixo */
+    min-height: 1.5rem; /*garante altura mínima para evitar "pulos" quando o texto muda */
+    text-align: center; /*centraliza o texto */
+    text-shadow: 0 0 6px #000dffcc; /*sombra azul pra destacar o texto */
+}
+/* estilo para o texto que mostra o vencedor */
+#winner{
+font-weight: 700; /*negrito forte */
+font-size: 1.5rem; /*fonte maior para destaque */
+margin-top:  1.5rem; /* espaço acima do texto */
+color: #f9f9f9; /*branco com transparência */
+text-align: center; /*centraliza o texto */
+text-shadow:
+  0 0 10px #0ff, /*camada 1: brilho ciano suave*/
+0 0 20px #0ff /*camada 2: brilho mais intenso */
+0 0 30px #0ff; /* camada 3: brilho ainda mais forte*/ 
+
+}

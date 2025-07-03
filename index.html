@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>PedraPapelTesoura</title>
+ <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<!--Título principal-->
+<h1>Pedra, Papel e Tesoura - TDS251TPSG 🫵😎</h1>
+<div class="choices">  <!-- Div que agrupas os botões de escolha -->
+    <button data-choice="Pedra" > Pedra </button> <!--aqui é um botão para escolher pedra ... No caso, utilizamos um atributo personalizado que começa com data- (que armazena informações extras para acessarmos com JavaScript)-->
+    <button data-choice="Papel" > Papel </button>
+    <button data-choice="Tesoura" > Tesoura </button>
+
+</div>
+<!--Texto que informa a escolha de cada jogador -->
+<p id="player1-choice"> jogador 1: escolha sua jogada </p>
+<p id="player2-choice"> jogador 2: escolha sua jogada </p>
+<!-- texto que exibe o resultado -->
+<p id="winner"></p>
+<script src="script.js"></script>
+</head>
+</body>
+</html>
